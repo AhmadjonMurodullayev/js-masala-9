@@ -1,8 +1,17 @@
 // 1.djsta'limldjaiorwgmNAJOTasoijmomisoijdsaoidjthemoisasdoonionbest
 // "Najot ta'lim is the best" yozuvini hosil qiling
   
-
-//    ishlolmadim ......
+let arr ="limldjaiorwgmNAJOTasoijmomisoijdsaoidjthemoisasdoonionbest"
+let target = "Najot ta'lim is the best"
+let arr2 = arr.split("")
+let arr3 = target.split("")
+let title = []
+arr3.forEach(item =>{
+  if(arr.toLowerCase().includes(item.toLowerCase()) ){
+     title.push(item)
+  }
+  })
+//   console.log(title.join(" "));
 
 
 
@@ -165,3 +174,5 @@ const filteredNumbers = numbers.filter(num => num % 2 !== 0 && num <= 10);
 const doubledNumbers = filteredNumbers.map(num => num * 2);
 console.log(filteredNumbers);
 console.log(doubledNumbers);
+
+
